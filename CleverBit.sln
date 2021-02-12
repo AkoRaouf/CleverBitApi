@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleverBit.API", "CleverBit.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleverBit.Core", "CleverBit.Core\CleverBit.Core.csproj", "{C6458F69-073C-4DFF-A556-76D40B80C7FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleverBit.Services", "CleverBit.Services\CleverBit.Services.csproj", "{4A3DF98D-6187-4446-84E1-1D75ABD2BFAC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{C6458F69-073C-4DFF-A556-76D40B80C7FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6458F69-073C-4DFF-A556-76D40B80C7FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6458F69-073C-4DFF-A556-76D40B80C7FB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4A3DF98D-6187-4446-84E1-1D75ABD2BFAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4A3DF98D-6187-4446-84E1-1D75ABD2BFAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4A3DF98D-6187-4446-84E1-1D75ABD2BFAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4A3DF98D-6187-4446-84E1-1D75ABD2BFAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
