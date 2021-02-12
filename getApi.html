@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -7,17 +7,24 @@
 </head>
 
 <body>
+    <input id="regionId" type="text" />
+    <button onclick="getData()"> Get Data! </button>
     <div class="mypanel"></div>
 
     <script>
-    $.getJSON('http://localhost:5000/api/region/10/employees', function(data) {
-        debugger;
-        var text = `name: ${data.name}<br>
-                    surname: ${data.surname}<br>
-                    regionName: ${data.regionName}<br>`
-
-        $(".mypanel").html(text);
-    });
+        var getData = function() {
+            debugger;
+            var rgid = $('#regionId').val();
+            $.getJSON(`http://localhost:5000/api/region/${rgid}/employees`, function (data) {
+                data.forEach((entry) => {
+                    $('.mypanel').prepend(`name: ${entry.name}<br>
+                            surname: ${entry.surname}<br>
+                            regionName: ${entry.regionName}<br>
+                            <br>
+                            <br>`)
+                });
+            });
+        };
     </script>
 
 </body>
