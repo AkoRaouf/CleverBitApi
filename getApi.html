@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript - read JSON from URL</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div class="mypanel"></div>
+
+    <script>
+    $.getJSON('http://localhost:5000/api/region/10/employees', function(data) {
+        debugger;
+        var text = `name: ${data.name}<br>
+                    surname: ${data.surname}<br>
+                    regionName: ${data.regionName}<br>`
+
+        $(".mypanel").html(text);
+    });
+    </script>
+
+</body>
+</html>
